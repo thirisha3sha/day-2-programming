@@ -1,0 +1,43 @@
+
+two="abc"
+three="def"
+four="ghi"
+five="jkl"
+six="mno"
+seven="pqrs"
+eight="tuv"
+nine="wxyz"
+x=list(input())
+newList=[]
+for i in x:
+    if(i=="2"):
+        newList.append(two)
+    elif(i=="3"):
+        newList.append(three)
+    elif(i=="4"):
+        newList.append(four)
+    elif(i=="5"):
+        newList.append(five)
+    elif(i=="6"):
+        newList.append(six) 
+    elif(i=="7"):
+        newList.append(seven)
+    elif(i=="8"):
+        newList.append(eight)
+    elif(i=="9"):
+        newList.append(nine)
+a=[]
+if len(newList)>=2:
+   for i in newList[0]:
+       for j in newList[1]:
+           a.append(i+j)
+   if(x[0]<=x[1]):
+       print(a)
+   else:
+       print(sorted(a,reverse=true))
+elif(len(newList)==1):
+     for i in newList[0]:
+        a.append(i)
+     print(a)
+else:
+    print(a)
