@@ -1,0 +1,12 @@
+a=input("list1=").split()
+b=input("list2=").split()
+print(a)
+print(b)  
+c=[]
+for i in a:
+    c.append(int(i))   
+d=[]
+for i in b:
+    d.append(int(i))
+c.extend(d)
+print(sorted(c))
