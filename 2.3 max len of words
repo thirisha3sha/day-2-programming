@@ -1,0 +1,6 @@
+sentence=input().split(",")
+b=[]
+for i in sentence:
+    a=i.split()
+    b.append(len(a))
+print(max(b))
